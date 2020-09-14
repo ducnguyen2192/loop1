@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<script>
+    document.write("0")
+    let x = 0;
+    let y = 1;
+    for (let i = 18; i > 0;i--){
+        let fiboNum = y;
+        y = y + x;
+        x = fiboNum;
+        if (fiboNum % 5 == 0){
+            document.write(", " + fiboNum)
+            break
+        }
+    }
+</script>
+</body>
+</html>

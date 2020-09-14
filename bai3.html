@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    document.write("0")
+    let x = 0;
+    let y = 1;
+    for (let i = 19; i > 0;i--){
+        let fiboNum = y;
+        y = y + x;
+        x = fiboNum;
+        document.write(", " + fiboNum)
+    }
+</script>
+</body>
+</html>

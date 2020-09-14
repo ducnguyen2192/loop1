@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body>
+    <button id="button" onclick="guess()">chơi</button>
+    <p id="result"></p>
+</body>
+</html>
+
+<script>
+    function guess() {
+        let a = parseInt(prompt("khoảng từ số "))
+        let b = parseInt(prompt(" đến số "))
+        let k = Math.floor(Math.random() * b) + a
+
+        for (let i = 0; i < 2; i++) {
+            let c = prompt("nhập số vừa đoán")
+            if (c == k) {
+                document.getElementById("result").innerHTML="đoán đúng"
+                break;
+            } else if (c > k) {
+                alert("đoán số nhỏ hơn")
+            } else if (c < k) {
+                alert("đoán số lớn hơn")
+            }
+        }
+    }
+</script>

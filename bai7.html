@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body>
+    <script>
+        let sum = 0
+        for(let x = 1;x<=100;x++){
+            sum = sum + x
+        }
+
+        if (sum %3 === 0 && sum %5 ===0){
+            document.write("FizzBuzz")
+        } else if (sum %3 === 0 && sum %5 !==0){
+            document.write("Fizz")
+        } else if (sum %3 !== 0 && sum %5 ===0) {
+            document.write("Buzz")
+        }
+    </script>
+</body>
+</html>
